@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <link class="favicon" rel="icon" type="image/x-icon" href="images/favicon.jpg">
+        <title>Demon Slayer-Kimetsu no Yaiba fan-site</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/mainpage.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Metamorphous&display=swap" rel="stylesheet" href="styles/mainpage.css">
+    </head>
+    <body class="body" style="
+         background-image: url(images/infinitycastle.avif);">
+    <a href="mainpage.html"> <img class="logo" src="images/logo.svg"> </a>
+    <div class="heading">
+            Welcome to my Demon Slayer fan-site!
+        </div>
+        
+    <div class="container">
+        <div class="heading1">
+            <a href="protagonists.html">
+                <button class="button1">
+                    <img class="tanjiro" src="images/tanjiro.png">
+                       <div class="inside-text1">Protagonists</div>
+                </button>
+            </a>
+        </div>
+
+        <div class="heading2">
+            <a href="pillars.html">
+                <button class="button2">
+                    <img class="himejima" src="images/himejima.png">
+                       <div class="inside-text2">Pillars</div>
+                </button>
+            </a>
+        </div>
+
+        <div class="heading3">
+            <a href="uppermoons.html">
+              <button class="button3">
+                    <img class="kokushibo" src="images/kokushibo.jpg">
+                       <div class="inside-text3">upper Moons</div>
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <div class="ending">You can subscribe to know more about the anime!
+          <button class="subscribe-button" onclick="
+                if (document.querySelector('.subscribe-button').innerHTML === 'Subscribe') {
+                        alert('Now you are a part of the Demon Slayer fandom!');
+                        document.querySelector('.subscribe-button').innerHTML = `Subscribed`;
+                }
+
+                else if (document.querySelector('.subscribe-button').innerHTML === 'Subscribed') {
+                    document.querySelector('.subscribe-button').innerHTML = 'Subscribe';
+                }
+          ">Subscribe</button>
+    </div>
+
+    <footer class="footer">
+            <div class="contact">Contact Info: <div class="email">email: arnabnaskar006@gmail.com </div>
+            </div>
+            <div class="social">
+                <a href="https://github.com/samael0-dev" target="_blank"><img class="git" src="images/git.webp"></a>
+                <a href="https://www.linkedin.com/in/arnab-naskar-6183a4372/" target="_blank"><img class="in" src="images/linkedin.webp"></a>
+                
+            </div>
+            <div class="copyright">© 2025 Demon-Slayer. Anime data & images belong to their respective owners.</div>
+            <div class="social">SOCIALS:</div>
+    </footer>
+    </body>
+</html>

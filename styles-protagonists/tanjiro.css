@@ -1,0 +1,151 @@
+/* ===== Base responsive (mobile-first) ===== */
+
+/* Always set fluid images and text by default */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Default phone layout */
+@media only screen and (max-width: 600px) {
+  body {
+    background: linear-gradient(to bottom, rgb(81, 2, 2) 40%, black 60%);
+    padding: 20px;
+    text-align: center;
+  }
+
+  .return-button {
+    display: none;
+  }
+
+  .heading {
+    font-size: 2rem;
+    margin-top: 1rem;
+    display: block;
+    color: white;
+  }
+
+  .img {
+    position: relative;
+    width: 80%;
+    margin: 2rem auto;
+    top: 0;
+    left: 0;
+  }
+
+  .power,
+  .about {
+    font-family: "Metamorphous", serif;
+    font-size: 2rem;
+    width: 100%;
+    margin: 1rem 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    color: white;
+  }
+
+  .power-icon {
+    display: block;
+    margin: 1rem auto;
+    height: 50px;
+  }
+}
+
+/* Tablet / medium screens */
+@media only screen and (min-width: 601px) and (max-width: 1299px) {
+  body {
+    background: linear-gradient(to bottom, rgb(81, 2, 2) 40%, black 60%);
+    padding: 30px;
+    text-align: center;
+  }
+
+  .heading {
+    font-size: 2.5rem;
+  }
+
+  .img {
+    width: 70%;
+    margin: auto;
+  }
+
+  .power,
+  .about {
+    font-size: 3rem;
+    width: 90%;
+    margin: 1.5rem auto;
+  }
+
+  .power-icon {
+    height: 60px;
+    margin: 1.5rem auto;
+  }
+}
+
+/* for desktop and laptop */
+@media (min-width: 1300px) {
+        body {
+            background-image:linear-gradient(180deg, #4c0d03 40%, rgb(0, 0, 0) 60%);
+            font-family: "Metamorphous", serif;
+            margin-top: -340px;
+            padding-right: 300px;
+        }
+
+        .img {
+            position: absolute;
+            top: 80px;
+        }
+
+        .return-button {
+            position: absolute;
+            font-family: "Metamorphous", serif;
+            top: 30px;
+            right: 20px;
+            height: 50px;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            border: solid;
+            border-color: rgb(254, 251, 251);
+            border-radius: 10px;
+        }
+
+        .bg-img {
+            position: relative;
+            left: 750px;
+            top: 300px;
+            margin-left: -110px;
+        }
+
+        .heading {
+            position: relative;
+            color: white;
+            top: -950px;
+            left: 140px;
+            font-size: 70px;
+        }
+
+        .power-icon {
+            position: relative;
+            top: -800px;
+            left: 580px;
+            height: 55px;
+        }
+
+        .power {
+            position: relative;
+            color: #AA0107;
+            top: -845px;
+            left: 20px;
+            font-size: 30px;
+        }
+
+        .about {
+            position: relative;
+            color: white;
+            font-size: 23px;
+            top: -780px;
+            left: 20px;
+            margin-right: 500px;
+        }
+}
