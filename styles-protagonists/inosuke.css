@@ -1,0 +1,151 @@
+/* ===== Base responsive (mobile-first) ===== */
+
+/* Always set fluid images and text by default */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Default phone layout */
+@media only screen and (max-width: 600px) {
+      body {
+        background: linear-gradient(to bottom, #024b52 40%, black 60%);
+        padding: 20px;
+        text-align: center;
+      }
+
+      .return-button {
+        display: none;
+      }
+
+      .heading {
+        font-size: 2rem;
+        margin-top: 1rem;
+        display: block;
+        color: white;
+      }
+
+      .img {
+        position: relative;
+        width: 80%;
+        margin: 2rem auto;
+        top: 0;
+        left: 0;
+      }
+
+      .power,
+      .about {
+        font-family: "Metamorphous", serif;
+        font-size: 2rem;
+        width: 100%;
+        margin: 1rem 0;
+        position: relative;
+        top: 0;
+        left: 0;
+        color: white;
+      }
+
+      .power-icon {
+        display: block;
+        margin: 1rem auto;
+        height: 50px;
+      }
+}
+
+/* ===== Tablet / medium screens ===== */
+@media only screen and (min-width: 601px) and (max-width: 1299px) {
+      body {
+        background: linear-gradient(to bottom, #024b52 40%, black 60%);
+        padding: 30px;
+        text-align: center;
+      }
+
+      .heading {
+        font-size: 2.5rem;
+      }
+
+      .img {
+        width: 70%;
+        margin: auto;
+      }
+
+      .power,
+      .about {
+        font-size: 3rem;
+        width: 90%;
+        margin: 1.5rem auto;
+      }
+
+      .power-icon {
+        height: 60px;
+        margin: 1.5rem auto;
+      }
+}
+
+/* for desktop and laptop */
+@media (min-width: 1300px) {
+      body {
+          background-image:linear-gradient(180deg, #024b52 40%, rgb(0, 0, 0) 60%);
+          font-family: "Metamorphous", serif;
+          margin-top: -15.6rem;
+          padding-right: 18.7rem;
+      }
+
+      .img {
+          position: absolute;
+          top: 5rem;
+      }
+
+      .return-button {
+          position: absolute;
+          font-family: "Metamorphous", serif;
+          top: 1.8rem;
+          right: 1.25rem;
+          height: 3.1rem;
+          background-color: black;
+          color: white;
+          cursor: pointer;
+          border: solid;
+          border-color: rgb(254, 251, 251);
+          border-radius: 0.6rem;
+      }
+
+      .bg-img {
+          position: relative;
+          left: 62.5rem;
+          top: 18.75rem;
+          margin-left: -6.87rem;
+      }
+
+      .heading {
+          position: relative;
+          color: white;
+          top: -59.37rem;
+          left: 8.75rem;
+          font-size: 4.37rem;
+      }
+
+      .power-icon {
+          position: relative;
+          top: -50rem;
+          left: 38.75rem;
+          height: 3.43rem;
+      }
+
+      .power {
+          position: relative;
+          color: #0AD9D9;
+          top: -53.1rem;
+          left: 1.25rem;
+          font-size: 1.87rem;
+      }
+
+      .about {
+          position: relative;
+          color: white;
+          font-size: 1.43rem;
+          top: -780px;
+          left: 1.25rem;
+          margin-right: 31.25rem;
+      }
+}
